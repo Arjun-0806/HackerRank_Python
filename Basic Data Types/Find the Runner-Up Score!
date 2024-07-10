@@ -1,0 +1,25 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    arr=set(arr)
+    arr=sorted(arr) 
+    print(arr[-2])
+
+'''
+#if you like positive numbers try this
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    arr=sorted(set(arr))
+    arr=list(reversed(arr))
+    print(arr[1])
+'''
+# you can use this code also
+''' 
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())  # Taking input
+    arr = list(set(arr))  # Rremoving the dupliates
+    arr.remove(max(arr))  # Removing the highest score / winner 
+    print(max(arr))  # Printing the second higest / Runner
+'''
